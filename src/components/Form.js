@@ -11,7 +11,6 @@ const Form = () => {
     useEffect(() => {
         axios.get(`https://api.themoviedb.org/3/search/movie?api_key=ed82f4c18f2964e75117c2dc65e2161d&query=${search}&language=fr-FR`)
             .then(res => setMoviesData(res.data.results))
-        // .then(res =>console.log(res))
     }, [search])
 
     const handleSearch = (e) => {
@@ -35,10 +34,16 @@ const Form = () => {
                 <div className='btn-sort-container'>
                     <div className='btn-sort'
                         id='goodToBad'
-                        onClick={() =>  setSortGoodBad('goodToBad')} >Top<span>➡️</span></div>
+                        onClick={() =>  setSortGoodBad('goodToBad')} >
+                            Top 
+                        <span class="fa-solid fa-arrow-right"></span>
+                        </div>
                     <div className='btn-sort'
                         id='badToGood'
-                        onClick={() => setSortGoodBad('BadToGood')} >Flop<span>➡️</span></div>
+                        onClick={() => setSortGoodBad('BadToGood')} >
+                            Flop 
+                        <span class="fa-solid fa-arrow-right"></span>
+                    </div>
                 </div>
             </div>
             <div className='result'>
