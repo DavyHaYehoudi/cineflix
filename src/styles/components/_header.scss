@@ -9,7 +9,7 @@
       position: absolute;
       top: 16px;
       left: 16px;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
   
       ul {
         display: flex;
@@ -21,6 +21,8 @@
           width: 102px;
           text-align: center;
           margin-right: 5px;
+          padding: 4px 30px;
+          
   
           &:visited {
             text-decoration: none;
