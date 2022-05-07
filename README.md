@@ -5,8 +5,8 @@
 
 
 
-##`API `
+API 
 https://www.themoviedb.org/settings/api
 
-##`Hosting Firebase`
+Hosting Firebase
 https://cineflix-dcd6d.web.app/
