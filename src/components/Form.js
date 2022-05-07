@@ -35,7 +35,7 @@ const Form = () => {
                     <div className='btn-sort'
                         id='goodToBad'
                         onClick={() =>  setSortGoodBad('goodToBad')} >
-                            Topp 
+                            Top 
                         <span class="fa-solid fa-arrow-right"></span>
                         </div>
                     <div className='btn-sort'
