@@ -49,7 +49,7 @@ const Form = () => {
             <div className='result'>
                 {
                     moviesData
-                        .slice(0, 12)
+                        .slice(0, 48)
                         .sort((a, b) => {
                             if (sortGoodBad === 'goodToBad') {
                                 return b.vote_average - a.vote_average
