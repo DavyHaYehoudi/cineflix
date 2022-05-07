@@ -35,7 +35,7 @@ const Form = () => {
                     <div className='btn-sort'
                         id='goodToBad'
                         onClick={() =>  setSortGoodBad('goodToBad')} >
-                            Top 
+                            Topp 
                         <span class="fa-solid fa-arrow-right"></span>
                         </div>
                     <div className='btn-sort'
@@ -49,7 +49,7 @@ const Form = () => {
             <div className='result'>
                 {
                     moviesData
-                        .slice(0, 48)
+                        .slice(0, 60)
                         .sort((a, b) => {
                             if (sortGoodBad === 'goodToBad') {
                                 return b.vote_average - a.vote_average

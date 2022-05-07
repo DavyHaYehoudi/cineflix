@@ -89,8 +89,9 @@ const Card = ({ movie }) => {
     let storedData = window.localStorage.movies.split(",");
 
     let newData = storedData.filter((id) => id != movie.id);
-
     window.localStorage.movies = newData;
+
+    window.location.reload();
   };
 
   return (
@@ -99,7 +100,7 @@ const Card = ({ movie }) => {
         src={
           movie.poster_path
             ? "https://image.tmdb.org/t/p/w500" + movie.poster_path
-            : "./img/poster.jpeg"
+            : "img/poster.jpeg"
         }
         alt="affiche film"
       />
@@ -132,7 +133,6 @@ const Card = ({ movie }) => {
           className="btn"
           onClick={() => {
             deleteStorage();
-            window.location.reload();
           }}
         >
           Supprimer de la liste
